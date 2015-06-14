@@ -9,7 +9,7 @@ package utfpr.ct.dainf.if62c.pratica;
  *
  * @author Julio
  */
-public class Jogador {
+public class Jogador implements Comparable<Jogador>{
     private int numero;
     private String nome;
 
@@ -28,4 +28,9 @@ public class Jogador {
     public String toString() {
         return numero + " - " + nome;
     }
+    @Override
+    public int compareTo(Jogador jogador) {
+        return this.getNumero() - jogador.getNumero();
+    }
+
 }

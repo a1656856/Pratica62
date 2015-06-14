@@ -14,7 +14,7 @@ import java.util.Set;
  * Template de projeto de programa Java usando Maven.
  * @author Wilson Horstmeyer Bogado <wilson@utfpr.edu.br>
  */
-public class Main {
+public class Pratica62 {
     public static void main(String[] args) {
     
        
