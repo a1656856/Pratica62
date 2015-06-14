@@ -2,8 +2,7 @@
 import utfpr.ct.dainf.if62c.pratica.Jogador;
 import utfpr.ct.dainf.if62c.pratica.Time;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import utfpr.ct.dainf.if62c.pratica.JogadorComparator;
 
 
 /**
@@ -48,12 +47,17 @@ public class Pratica62 {
         HashMap hes = b.getJogadores();
         
         
+        for(Jogador j: b.ordena(new JogadorComparator(false, true, true))){
+            System.out.println(j);
+        }
         
-        
+       /* 
    
     
    System.out.println("Posição     Time 1        Time 2" );
     Set<String> entries1 = has.keySet();
+   
+    
     
     for (String entry: entries1) {
         
@@ -62,7 +66,7 @@ public class Pratica62 {
     }
 
     
-        
+      */  
 
     }
 }

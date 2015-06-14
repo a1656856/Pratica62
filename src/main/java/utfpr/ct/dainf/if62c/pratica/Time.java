@@ -34,4 +34,8 @@ public class Time {
     public HashMap getJogadores(){
        return jogadores;
    }
+
+    public Iterable<Jogador> ordena(JogadorComparator jogadorComparator) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
