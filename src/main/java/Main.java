@@ -28,9 +28,9 @@ public class Main {
         Jogador D2 = new Jogador(8,"Cristiano");
         
         
-        Time a = new Time(4);
+        Time a = new Time();
         
-        Time b = new Time(4);
+        Time b = new Time();
         
        
        
@@ -47,17 +47,18 @@ public class Main {
         HashMap has = a.getJogadores();
         HashMap hes = b.getJogadores();
         
-        has.get(has.keySet());
+        
         
         
    
     
    System.out.println("Posição     Time 1        Time 2" );
-    Set<Map.Entry<String, Jogador>> entries1 = has.entrySet();
-    Set<Map.Entry<String, Jogador>> entries2 = hes.entrySet();
-    for (Map.Entry<String, Jogador> entry: entries1) {
+    Set<String> entries1 = has.keySet();
+    
+    for (String entry: entries1) {
         
-        System.out.println(entry.getKey() + "     " + entry.getValue() + "        " + entry.getValue());
+        
+        System.out.println(entry +"    "+  has.get(entry)+ "    "  + hes.get(entry));
     }
 
     

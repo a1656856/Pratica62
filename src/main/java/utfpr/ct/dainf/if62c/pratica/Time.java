@@ -13,13 +13,14 @@ import java.util.HashMap;
  */
 public class Time {
     
-    private final int num;
-    private final HashMap<String, Jogador> jogadores = new HashMap<>();
+   
+    private HashMap<String, Jogador> jogadores;
     
     
-    public Time(int a){
+    public Time(){
     
-   this.num = a;
+  HashMap<String, Jogador> jogadores = new HashMap<>();
+  this.jogadores = jogadores;
     
 }
     
