@@ -2,6 +2,8 @@
 import utfpr.ct.dainf.if62c.pratica.Jogador;
 import utfpr.ct.dainf.if62c.pratica.Time;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -48,12 +50,18 @@ public class Main {
         has.get(has.keySet());
         
         
-        
+   
     
-        System.out.println("Posição     Time 1        Time 2" );
-        System.out.println("Goleiro     "+ has.get("Goleiro")+" " + hes.get("Goleiro"));
-        System.out.println("Meio        "+ has.get("Meio")+"  " + hes.get("Meio"));
-        System.out.println("Atacante     "+ has.get("Atacante")+" " + hes.get("Atacante"));
-        System.out.println("Zagueiro     "+ has.get("Zagueiro")+" " + hes.get("Zagueiro"));
+   System.out.println("Posição     Time 1        Time 2" );
+    Set<Map.Entry<String, Jogador>> entries1 = has.entrySet();
+    Set<Map.Entry<String, Jogador>> entries2 = hes.entrySet();
+    for (Map.Entry<String, Jogador> entry: entries1) {
+        
+        System.out.println(entry.getKey() + "     " + entry.getValue() + "        " + entry.getValue());
+    }
+
+    
+        
+
     }
 }
