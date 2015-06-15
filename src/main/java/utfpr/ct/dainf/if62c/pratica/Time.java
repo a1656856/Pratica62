@@ -5,7 +5,10 @@
  */
 package utfpr.ct.dainf.if62c.pratica;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  *
@@ -35,7 +38,12 @@ public class Time {
        return jogadores;
    }
 
-    public Iterable<Jogador> ordena(JogadorComparator jogadorComparator) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       public List<Jogador> ordena(JogadorComparator comparacao)
+    {
+        //Criando uma lista com os valores do mapa
+        List<Jogador> sortido = new ArrayList<>(jogadores.values());
+        //Ordenando a lista
+        Collections.sort(sortido, comparacao);
+        return sortido;
     }
 }

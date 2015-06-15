@@ -47,7 +47,7 @@ public class Pratica62 {
         HashMap hes = b.getJogadores();
         
         
-        for(Jogador j: b.ordena(new JogadorComparator(false, true, true))){
+        for(Jogador j: b.ordena(new JogadorComparator(false, true, false))){
             System.out.println(j);
         }
         
